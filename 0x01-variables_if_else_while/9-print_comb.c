@@ -9,13 +9,15 @@ int main(void)
 {
 int ch;
 
-for (ch = '0' ; ch <= '8' ; ch++)
+for (ch = 48 ; ch <= 57 ; ch++)
 {
 putchar(ch);
+if (ch < 57){
 putchar (',');
 putchar (' ');
 }
-putchar('9');
+}
+putchar('\n');
 
 return (0);
 }

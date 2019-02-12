@@ -1,6 +1,11 @@
 #include "holberton.h"
 
-int main (void)
+/**
+ * main - entry point
+ * Return: Always 0(Sucess)
+*/
+
+int main(void)
 {
 _putchar('H');
 _putchar('o');

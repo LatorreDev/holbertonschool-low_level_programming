@@ -1,13 +1,17 @@
 #include "holberton.h"
 
 /**
- *  jack_bauer- entry point
+ *  add - entry point
+ *  @a: print the value
+ *  @b: print the value
+ *
+ *  Return: an addition between two parameters
  *
 */
 
 int add(int a, int b)
 {
-    return (a+b);
+return (a + b);
 }
 
 

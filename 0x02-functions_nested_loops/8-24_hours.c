@@ -2,14 +2,12 @@
 
 /**
  *  jack_bauer- entry point
- *  @i: the character to print
- *  @j: the character to print
  *
 */
 
 void jack_bauer(void)
 {
-int i,j;
+int i, j;
 
 for (i = 00 ; i <= 23 ; i++)
 {

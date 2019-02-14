@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
- * _isdigit - entry point
+ * mul - entry point
  *
  * @a: first value
- * @a: second value
+ * @b: second value
  *
  * Return: multiplication between a and b
  *

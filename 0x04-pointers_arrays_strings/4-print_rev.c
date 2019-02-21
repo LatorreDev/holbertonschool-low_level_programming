@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* _puts - entry point
+* print_rev - entry point
 * @str: string array
 */
 

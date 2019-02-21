@@ -7,10 +7,9 @@
 
 void print_rev(char *str)
 {
-	int i;
+	int j;
 
-	for (i = 62 ; i[str] >= 0 ;i--)
-		_putchar (str[i]);
-	_putchar ('\n');
-
+	for (j = 0 ; str[j] <= 0 ;j--)
+	_putchar (str[j]);
+	
 }

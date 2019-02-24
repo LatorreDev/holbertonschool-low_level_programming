@@ -13,12 +13,14 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 != 0)
 			printf("Fizz ");
-		if (i % 5 == 0 && i % 3 != 0)
+		if (i % 5 == 0 && i % 3 != 0 && i != 100)
 			printf("Buzz ");
 		if (i % 3 == 0 && i % 5 == 0)
 			printf("FizzBuzz ");
 		if (i % 3 != 0 && i % 5 != 0)
 			printf("%i ", i);
+		if (i % 5 == 0 && i % 3 != 0 && i == 100)
+			printf("Buzz");
 	}
 	putchar(10);
 	return (0);

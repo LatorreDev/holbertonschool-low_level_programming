@@ -3,9 +3,8 @@
 /**
 * _strchr - entry point
 * Return: array
-* @dest: array
-* @src: value
-* @n: int
+* @s: array
+* @c: value
 */
 
 char *_strchr(char *s, char c)
@@ -15,7 +14,8 @@ char *_strchr(char *s, char c)
 	for (i = 0 ; s[i] ; i++)
 	{
 		if (s[i] == c)
-			return(&s[i]);
+			return (&s[i]);
 	}
-return (0);
+if (s[i] == '\0')
+	return (0);
 }

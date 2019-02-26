@@ -2,14 +2,12 @@
 
 /**
 * print_chessboard - entry point
-* @s: array
-* @to: second array
-*
+* @a: array
 */
 
 void print_chessboard(char (*a)[8])
 {
-	unsigned int i,j;
+	unsigned int i, j;
 
 	for (i = 0 ; i < 8 ; i++)
 	{

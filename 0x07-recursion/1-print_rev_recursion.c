@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* _puts_recursion - entry point
+* _print_rev_recursion - entry point
 * @s: array
 */
 

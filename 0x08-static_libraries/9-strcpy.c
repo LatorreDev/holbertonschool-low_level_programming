@@ -1,6 +1,9 @@
 #include "holberton.h"
 /**
 * _strcpy - entry point
+* @dest: entry array
+* @src: entry array
+* Return: always success
 */
 
 

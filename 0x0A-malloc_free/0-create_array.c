@@ -10,5 +10,26 @@
 
 char *create_array(unsigned int size, char c)
 {
+	int counterA;
+	char *myarray;
 
+	if (size == 0)
+	{
+		return (NULL);
+	}
+
+	myarray = malloc(sizeof(*myarray) * size);
+
+	if (myarray == NULL)
+	{
+		return (NULL);
+	}
+
+
+	for (counterA = 0 ; (unsigned int)counterA < size ; counterA++)
+	{
+		myarray[counterA] = c;
+	}
+
+	return (myarray);
 }

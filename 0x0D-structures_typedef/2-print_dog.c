@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "dog.h"
 
+/**
+* print_dog - entry point
+* @d: entry info
+*/
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
@@ -17,17 +21,16 @@ void print_dog(struct dog *d)
 	{
 		printf("Age: (nil)");
 	}
-	
 	if (d->owner == NULL)
 	{
 		printf("Owner: (nil)");
 	}
 
-	if(d)
+	if (d)
 	{
-		printf ("Name: %s\n", d->name);
-		printf ("Age: %f\n", d->age);
-		printf ("Owner: %s\n", d->owner);
+		printf("Name: %s\n", d->name);
+		printf("Age: %f\n", d->age);
+		printf("Owner: %s\n", d->owner);
 	}
 
 

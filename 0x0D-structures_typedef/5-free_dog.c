@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
-* free - entry point
+* free_dog - entry point
 * @d: pointer
 */
 

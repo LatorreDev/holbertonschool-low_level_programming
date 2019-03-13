@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 
 /**
 * array_iterator - entry point
@@ -8,7 +9,7 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int counter;
+	long unsigned int counter;
 
 	if (array && action != NULL)
 	{

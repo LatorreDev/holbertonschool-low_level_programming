@@ -5,6 +5,7 @@
 * main - entry point
 * @argc: number of arguments
 * @argv: value of arguments
+* Return: always success!
 */
 
 int main(int argc, char *argv[])

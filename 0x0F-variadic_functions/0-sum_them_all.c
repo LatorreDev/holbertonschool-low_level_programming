@@ -3,8 +3,7 @@
 
 /**
 * sum_them_all - Entry point
-* @const unsigned: entry arg 1
-* @int n: entry arg 2
+* @n: entry arg 2
 * Return: always sucess
 */
 
@@ -16,7 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 /* initialize valist for num number of arguments */
 	va_list valist;
 
-/* Declarations */		
+/* Declarations */
 	int sum = 0;
 	unsigned int counter;
 

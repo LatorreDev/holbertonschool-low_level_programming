@@ -28,7 +28,7 @@ char *create_array(unsigned int size, char c)
 
 	for (counterA = 0 ; (unsigned int)counterA < size ; counterA++)
 	{
-		myarray[counterA] = c;
+		c = myarray[counterA];
 	}
 
 	return (myarray);

@@ -5,13 +5,22 @@
 * Return: Always 0.
 */
 
-int main(void)
+int main (void)
 {
-    pid_t my_pid;
 
-    my_pid = getpid();
-    printf("%u\n", my_pid);
-    return (0);
+	char *buffer = NULL;
+	size_t len = 0;
+
+	while (1)
+	{
+		printf("$ ");
+
+	}
+
+	return (0);
 }
 
+ssize_t _getline (char **lineptr, size_t *n, stdin)
+{
 
+}

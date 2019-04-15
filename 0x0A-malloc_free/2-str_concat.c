@@ -15,20 +15,27 @@ char *str_concat(char *s1, char *s2)
 	int counterC;
 	char *myarray;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	for (counterA = 0 ; s1[counterA] ; counterA++)
 	{
-	
 	}
-	
 	for (counterB = 0 ; s2[counterB] ; counterB++)
 	{
-	
 	}
 
 	myarray = malloc(sizeof(*myarray) * (counterA + counterB + 1));
 
 	if (myarray == NULL)
-		return(NULL);
+		return (NULL);
 
 	for (counterC = 0 ; counterC <= counterA ; counterC++)
 	{
@@ -39,6 +46,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		myarray[counterA + counterC] = s2[counterA];
 	}
-
+	myarray[counterA + counterC] = '\0';
 	return (myarray);
 }

@@ -37,12 +37,12 @@ char *str_concat(char *s1, char *s2)
 	if (myarray == NULL)
 		return (NULL);
 
-	for (counterC = 0 ; counterC <= counterA ; counterC++)
+	for (counterC = 0 ; counterC < counterA ; counterC++)
 	{
-		myarray[counterC] = s1[counterA];
+		myarray[counterC] = s1[counterC];
 	}
 
-	for (counterA = 0 ; counterA <= counterB ; counterA++)
+	for (counterA = 0 ; counterA < counterB ; counterA++)
 	{
 		myarray[counterA + counterC] = s2[counterA];
 	}

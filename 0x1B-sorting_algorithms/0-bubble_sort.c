@@ -23,7 +23,8 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 	}
-	return;
+	else
+		return;
 }
 
 /**
@@ -35,10 +36,10 @@ void bubble_sort(int *array, size_t size)
 
 void bubble_swap(int *first, int *second)
 {
-        int temp = 0;
+	int temp = 0;
 
-        temp = *first;
-        *first = *second;
-        *second = temp;
+	temp = *first;
+	*first = *second;
+	*second = temp;
 }
 

@@ -29,4 +29,6 @@ void insertion_sort_list(listint_t **list);
 
 /* Aux funcs */
 void bubble_swap(int *first, int *second);
+void ins_swap(listint_t *head, listint_t *next);
+void ins_reverse(listint_t*head);
 #endif /* SORT_H */

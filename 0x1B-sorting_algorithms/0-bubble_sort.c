@@ -9,7 +9,7 @@ void bubble_sort(int *array, size_t size)
 {
 	unsigned int i, j = 0;
 
-	if (array != NULL && size > 2)
+	if (array != NULL && size >= 2)
 	{
 		for (i = 0; i < size - 1; i++)
 		{
@@ -42,4 +42,3 @@ void bubble_swap(int *first, int *second)
 	*first = *second;
 	*second = temp;
 }
-

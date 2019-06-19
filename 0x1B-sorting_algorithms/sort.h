@@ -26,9 +26,8 @@ void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 
-
 /* Aux funcs */
 void swap(int *first, int *second);
 void ins_swap(listint_t *head, listint_t *next);
-void ins_reverse(listint_t*head);
+void ins_reverse(listint_t *head);
 #endif /* SORT_H */

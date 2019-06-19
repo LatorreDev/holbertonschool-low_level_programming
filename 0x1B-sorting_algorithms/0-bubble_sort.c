@@ -28,7 +28,7 @@ void bubble_sort(int *array, size_t size)
 }
 
 /**
-* bubble_swap - swap for the bubble sort
+* swap - swap for the bubble sort
 *
 * @first: entry int
 * @second: entry int

@@ -1,77 +1,41 @@
 #include "sort.h"
+#include <stdio.h>
 /**
- * bubble_sort - Bubble sort algoritm
+ * insertion_sort_list - Insert sort algoritm
  *
- * @array: Size of the array
- * @size: Size of the array
+ * @list: Size of the array
  */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *copy;
-	copy = *list;
-	while(copy)
-	{
-		if(copy->prev)
-		{
-			if(copy->n < copy->prev->n)
-			{
-				printf("Debugg antes:: %d\n", copy->n);
-				ins_swap(copy, copy->prev);
-				print_list(*list);
-				printf("Debugg:: despues %d\n", copy->n);
-				ins_reverse(copy);
-			}
 
+	copy = (*list)->next;
+	while (copy)
+	{
+		while (copy->prev && copy->n < copy->prev->n)
+		{
+			copy->prev->next = copy->next;
+			if (copy->next)
+				copy->next->prev = copy->prev;
+			ins_swap(copy);
+			if (!copy->prev)
+				*list = copy;
+			else
+				copy->prev->next = copy;
+			print_list(*list);
 		}
 		copy = copy->next;
 	}
-
 }
 
 /**
  * ins_swap - Insert sort swap
  *
- * @head: Header of the linked list
- * @prev: prev pointer to the l.l
+ * @copy: Header of the linked list
  */
-void ins_swap(listint_t *head, listint_t *prev)
+void ins_swap(listint_t *copy)
 {
-	listint_t *temp = NULL;
-
-	(void)prev;
-	(void)head;
-	temp = malloc(sizeof(listint_t));
-	if(temp == NULL)
-		return;
-	else
-	{
-		temp->next = head->next;
-		temp->prev = prev->prev;
-		temp->prev->next = head;
-		temp->next->prev = prev;
-	}
-	head->prev = temp->prev;
-	head->next = prev;
-	prev->prev = head;
-	prev->next = temp->next;
-	free(temp);
-}
-
-
-/**
- * ins_reverse - Iterate in reverse
- *
- * @head: Header of the linked list
- */
-void ins_reverse(listint_t *head)
-{
-	listint_t *copy = head;
-
-	while(copy && (copy->prev->n > copy->n))
-	{
-		if(copy->prev->n > copy->n)
-			ins_swap(copy, copy->prev);
-		printf("::DEBUGG:: %d\n",copy->n);
-		copy = copy->prev;
-	}
+	copy->next = copy->prev;
+	copy->prev = copy->prev->prev;
+	copy->next->prev = copy;
 }

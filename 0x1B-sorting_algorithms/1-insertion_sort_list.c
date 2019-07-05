@@ -9,22 +9,25 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *copy;
 
-	copy = (*list)->next;
-	while (copy)
+	if (list)
 	{
-		while (copy->prev && copy->n < copy->prev->n)
+		copy = (*list)->next;
+		while (copy)
 		{
-			copy->prev->next = copy->next;
-			if (copy->next)
-				copy->next->prev = copy->prev;
-			ins_swap(copy);
-			if (!copy->prev)
-				*list = copy;
-			else
-				copy->prev->next = copy;
-			print_list(*list);
+			while (copy->prev && copy->n < copy->prev->n)
+			{
+				copy->prev->next = copy->next;
+				if (copy->next)
+					copy->next->prev = copy->prev;
+				ins_swap(copy);
+				if (!copy->prev)
+					*list = copy;
+				else
+					copy->prev->next = copy;
+				print_list(*list);
+			}
+			copy = copy->next;
 		}
-		copy = copy->next;
 	}
 }
 

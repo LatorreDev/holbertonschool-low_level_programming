@@ -1,0 +1,6 @@
+#! include "m.h"
+
+all: holberton
+
+holberton:
+	gcc main.c holberton.c -o holberton

@@ -2,6 +2,7 @@
 #define SORT_H
 /* Libraries */
 #include <stdlib.h>
+#include <stddef.h>
 /* Structs */
 
 /**
@@ -17,6 +18,9 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
+
+/* Aux funcs */
+void bubble_swap(int *first, int *second);
 
 /* Prototypes */
 

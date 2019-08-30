@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
 * times_table - entry point
-* 
+*
 */
 
 void times_table(void)
@@ -22,7 +22,7 @@ void times_table(void)
 				}
 
 			}
-		
+
 			if (i*j >= 10)
 			{
 				_putchar((i * j)/10 + '0');
@@ -31,6 +31,6 @@ void times_table(void)
 
 			}
 		}
-	_putchar(10);	
+	_putchar(10);
 	}
 }
